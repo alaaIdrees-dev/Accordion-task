@@ -6,43 +6,61 @@
   <title>Accordion Card</title>
   <link rel="stylesheet" href="styles.css" />
   <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
 
-  <div class="accordion">
+  <div class="accordion-card">
     <h1>FAQ</h1>
-    <div class="accordion-item">
-      <button class="accordion-header" aria-expanded="false">
-        <span>What are your opening hours?</span>
-        <span class="icon" aria-hidden="true"><i class="ri-arrow-down-s-line"></i></span>
-      </button>
-      <div class="accordion-content">
-        <p>We are open daily from 12:00 PM to 12:00 AM.</p>
-      </div>
-    </div>
 
-    <div class="accordion-item">
-      <button class="accordion-header" aria-expanded="false">
-        <span>Do I need to make a reservation in advance?</span>
-        <span class="icon" aria-hidden="true"><i class="ri-arrow-down-s-line"></i></span>
-      </button>
-      <div class="accordion-content">
-        <p>Reservations are recommended on weekends to secure your table.</p>
-      </div>
-    </div>
+    <ul class="accordion">
+      <li class="accordion-item">
+        <button
+          class="accordion-header"
+          id="acc-header-1"
+          aria-expanded="false"
+          aria-controls="acc-panel-1"
+        >
+          <span>What are your opening hours?</span>
+          <span class="icon" aria-hidden="true"><i class="ri-arrow-down-s-line"></i></span>
+        </button>
+        <div class="accordion-content" id="acc-panel-1" role="region" aria-labelledby="acc-header-1">
+          <p>We are open daily from 12:00 PM to 12:00 AM.</p>
+        </div>
+      </li>
 
-    <div class="accordion-item">
-      <button class="accordion-header" aria-expanded="false">
-        <span>Do you offer vegetarian options ?</span>
-        <span class="icon" aria-hidden="true"><i class="ri-arrow-down-s-line"></i></span>
-      </button>
-      <div class="accordion-content">
-        <p>Yes, we have a variety of vegetarian and healthy dishes on our menu.</p>
-      </div>
-    </div>
+      <li class="accordion-item">
+        <button
+          class="accordion-header"
+          id="acc-header-2"
+          aria-expanded="false"
+          aria-controls="acc-panel-2"
+        >
+          <span>Do I need to make a reservation in advance?</span>
+          <span class="icon" aria-hidden="true"><i class="ri-arrow-down-s-line"></i></span>
+        </button>
+        <div class="accordion-content" id="acc-panel-2" role="region" aria-labelledby="acc-header-2">
+          <p>Reservations are recommended on weekends to secure your table.</p>
+        </div>
+      </li>
+
+      <li class="accordion-item">
+        <button
+          class="accordion-header"
+          id="acc-header-3"
+          aria-expanded="false"
+          aria-controls="acc-panel-3"
+        >
+          <span>Do you offer vegetarian options?</span>
+          <span class="icon" aria-hidden="true"><i class="ri-arrow-down-s-line"></i></span>
+        </button>
+        <div class="accordion-content" id="acc-panel-3" role="region" aria-labelledby="acc-header-3">
+          <p>Yes, we have a variety of vegetarian and healthy dishes on our menu.</p>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <script src="script.js"></script>
